@@ -1,18 +1,21 @@
 # Cloudflare Pages redirects
 # https://developers.cloudflare.com/pages/platform/redirects/
 
-# 404 fallback
-/* /404.html 404
-
-# SEO: old WordPress blog URLs → new blog
-/articles/* /blog/:splat 301
-/blog/* /blog/:splat 301
-/2026/* /blog/posts/:splat 301
-
-# Root
-/ /index.html 200
+# Remove .html extension for clean URLs
 /services/crm /services/crm.html 200
 /services/ai-agents /services/ai-agents.html 200
 /services/digital-transformation /services/digital-transformation.html 200
 /contact /contact.html 200
 /blog /blog/index.html 200
+
+# Old WordPress blog URLs → new blog (301 permanent)
+/articles/* /blog/:splat 301
+/2026/* /blog/posts/:splat 301
+
+# Blog posts - clean URLs without .html
+/blog/posts/ai-licence-obrazovne-ustanove /blog/posts/ai-licence-obrazovne-ustanove.html 200
+/blog/posts/bitrix24-vs-ai-crm /blog/posts/bitrix24-vs-ai-crm.html 200
+/blog/posts/rpa-automatizacija-procesa /blog/posts/rpa-automatizacija-procesa.html 200
+/blog/posts/bitrix24-crm-implementacija-vodic /blog/posts/bitrix24-crm-implementacija-vodic.html 200
+/blog/posts/ai-agenti-customer-support /blog/posts/ai-agenti-customer-support.html 200
+/blog/posts/agentic-ai-autonomni-agenti /blog/posts/agentic-ai-autonomni-agenti.html 200
