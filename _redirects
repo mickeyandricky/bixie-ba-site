@@ -1,24 +1,6 @@
 # Cloudflare Pages redirects
-# https://developers.cloudflare.com/pages/platform/redirects/
-
-# Remove .html extension for clean URLs
-/services/crm /services/crm.html 200
-/services/ai-agents /services/ai-agents.html 200
-/services/digital-transformation /services/digital-transformation.html 200
-/contact /contact.html 200
-/blog /blog/index.html 200
+# Directory-based URLs work natively — no rewrites needed
 
 # Old WordPress blog URLs → new blog (301 permanent)
 /articles/* /blog/:splat 301
-/2026/* /blog/posts/:splat 301
-
-# Blog posts - clean URLs without .html
-/blog/posts/ai-licence-obrazovne-ustanove /blog/posts/ai-licence-obrazovne-ustanove.html 200
-/blog/posts/bitrix24-vs-ai-crm /blog/posts/bitrix24-vs-ai-crm.html 200
-/blog/posts/rpa-automatizacija-procesa /blog/posts/rpa-automatizacija-procesa.html 200
-/blog/posts/bitrix24-crm-implementacija-vodic /blog/posts/bitrix24-crm-implementacija-vodic.html 200
-/blog/posts/ai-agenti-customer-support /blog/posts/ai-agenti-customer-support.html 200
-/blog/posts/agentic-ai-autonomni-agenti /blog/posts/agentic-ai-autonomni-agenti.html 200
-/blog/posts/zoho-crm-implementacija /blog/posts/zoho-crm-implementacija.html 200
-/blog/posts/salesforce-crm-implementacija /blog/posts/salesforce-crm-implementacija.html 200
-/blog/posts/monday-crm-produktivnost /blog/posts/monday-crm-produktivnost.html 200
+/2026/* /blog/:splat 301
