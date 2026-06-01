@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt — BIXIE | CRM, AI, Digitalna Transformacija</title>
-    <meta name="description" content="Kontaktirajte BIXIE za CRM implementaciju, AI agente i digitalnu transformaciju. Sarajevo, BiH — +387 33 922 622">
+    <meta name="description" content="Kontaktirajte BIXIE. Email: hello@bixie.ba. Tel: 033 922 622. Maglajska 1, 71000 Sarajevo. CRM implementacija, AI agenti, digitalna transformacija.">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>*{font-family:'Inter',sans-serif}body{background:#0d1219;color:#e2e8f0}.card{background:#121826;border:1px solid #1e293b;border-radius:12px;padding:24px}.btn-primary{background:#2563eb;color:#fff;padding:10px 24px;border-radius:8px;font-weight:500;display:inline-block}.btn-primary:hover{background:#1d4ed8}.btn-secondary{background:0 0;color:#e2e8f0;padding:10px 24px;border-radius:8px;border:1px solid #334155;display:inline-block}input,textarea,select{background:#1e293b;border:1px solid #334155;color:#e2e8f0;border-radius:8px;padding:10px 14px;width:100%;font-size:14px}input:focus,textarea:focus{outline:0;border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.2)}</style>
+    <style>*{font-family:'Inter',sans-serif}body{background:#0d1219;color:#e2e8f0}.card{background:#121826;border:1px solid #1e293b;border-radius:12px;padding:24px}.btn-primary{background:#2563eb;color:#fff;padding:10px 24px;border-radius:8px;font-weight:500;display:inline-block;transition:all .2s}.btn-primary:hover{background:#1d4ed8}.btn-secondary{background:0 0;color:#e2e8f0;padding:10px 24px;border-radius:8px;border:1px solid #334155;display:inline-block}input,textarea,select{background:#1e293b;border:1px solid #334155;color:#e2e8f0;border-radius:8px;padding:10px 14px;width:100%;font-size:14px}input:focus,textarea:focus{outline:0;border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.2)}</style>
 </head>
 <body>
     <nav class="border-b border-gray-800 sticky top-0 bg-[#0d1219]/95 backdrop-blur-sm z-50">
@@ -18,8 +18,8 @@
                 <span class="text-xl font-bold text-white">BIXIE</span>
             </a>
             <div class="hidden md:flex items-center gap-6">
-                <a href="/services/crm" class="text-gray-400 hover:text-white text-sm">CRM</a>
-                <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI Agenti</a>
+                <div class="relative group"><a href="/services/crm" class="text-gray-400 hover:text-white text-sm">CRM ▾</a><div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50"><div class="py-2"><a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pregled CRM usluga</a><a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Bitrix24</a><a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Zoho CRM</a><a href="/services/crm#monday" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Monday.com</a><a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Salesforce</a></div></div></div>
+                <div class="relative group"><a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI ▾</a><div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50"><div class="py-2"><a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Agenti</a><a href="/services/ai-agents#implementacija" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Implementacija</a><a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Licence</a></div></div></div>
                 <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm">Digitalna Transformacija</a>
                 <a href="/blog" class="text-gray-400 hover:text-white text-sm">Blog</a>
                 <a href="/contact" class="text-white text-sm font-medium">Kontakt</a>
@@ -28,10 +28,13 @@
     </nav>
 
     <section class="max-w-6xl mx-auto px-4 py-16">
-        <h1 class="text-4xl font-bold text-white mb-4">Kontaktirajte nas</h1>
-        <p class="text-gray-400 max-w-2xl mb-12">Zakažite besplatne konsultacije ili zatražite ponudu. Odgovaramo u roku 24h.</p>
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold text-white mb-4">📞 Kontaktirajte nas</h1>
+            <p class="text-gray-400 max-w-2xl">Pošaljite upit, zatražite ponudu ili zakažite besplatne konsultacije. Odgovaramo u roku 24h.</p>
+        </div>
 
         <div class="grid md:grid-cols-2 gap-8">
+            <!-- Form -->
             <div>
                 <form action="https://formspree.io/f/xeoopnjd" method="POST" class="space-y-4">
                     <div class="grid grid-cols-2 gap-4">
@@ -40,29 +43,51 @@
                     </div>
                     <div><label class="text-sm text-gray-400 block mb-1">Email *</label><input type="email" name="email" required placeholder="email@primjer.com"></div>
                     <div><label class="text-sm text-gray-400 block mb-1">Telefon</label><input type="tel" name="phone" placeholder="+387 XX XXX XXX"></div>
-                    <div><label class="text-sm text-gray-400 block mb-1">Kompanija</label><input type="text" name="company" placeholder="Naziv kompanije"></div>
+                    <div><label class="text-sm text-gray-400 block mb-1">Kompanija / Ustanova</label><input type="text" name="company" placeholder="Naziv kompanije ili ustanove"></div>
                     <div><label class="text-sm text-gray-400 block mb-1">Usluga</label>
                         <select name="service">
                             <option value="">— Odaberite —</option>
-                            <option value="crm">CRM Implementacija (Bitrix24)</option>
+                            <option value="crm">CRM Implementacija (Bitrix24, Zoho, Salesforce...)</option>
                             <option value="ai-agents">AI Agenti & Automatizacija</option>
+                            <option value="ai-implementacija">AI Implementacija (PoC, integracija)</option>
+                            <option value="licence">AI Licence (ChatGPT, Gemini, Copilot, Claude...)</option>
                             <option value="digital-transformation">Digitalna Transformacija</option>
-                            <option value="licenses">AI Licence (ChatGPT, Gemini, Copilot...)</option>
                             <option value="other">Drugo</option>
                         </select>
                     </div>
                     <div><label class="text-sm text-gray-400 block mb-1">Poruka *</label><textarea name="message" rows="5" required placeholder="Opišite šta vam je potrebno..."></textarea></div>
-                    <button type="submit" class="btn-primary w-full text-center">Pošaljite upit</button>
+                    <button type="submit" class="btn-primary w-full text-center">📩 Pošaljite upit</button>
                 </form>
             </div>
+
+            <!-- Contact info -->
             <div class="space-y-6">
-                <div class="card">
-                    <h3 class="text-lg font-semibold text-white mb-3">📞 Direktan kontakt</h3>
-                    <div class="space-y-3 text-sm text-gray-400">
-                        <p><strong class="text-white">Email:</strong> info@bixie.ba</p>
-                        <p><strong class="text-white">Telefon:</strong> +387 33 922 622</p>
-                        <p><strong class="text-white">Adresa:</strong> Maglajska 1, 71000 Sarajevo, Bosna i Hercegovina</p>
-                        <p><strong class="text-white">Radno vrijeme:</strong> Pon - Pet: 09:00 - 17:00</p>
+                <div class="card" style="border:1px solid #2563eb40;">
+                    <h3 class="text-lg font-semibold text-white mb-4">📬 Naši kontakti</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">📧</span>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <p class="text-white font-medium">hello@bixie.ba</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">📞</span>
+                            <div>
+                                <p class="text-sm text-gray-400">Telefon</p>
+                                <p class="text-white font-medium">033 922 622</p>
+                                <p class="text-xs text-gray-500">Pon - Pet: 09:00 - 17:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">📍</span>
+                            <div>
+                                <p class="text-sm text-gray-400">Adresa</p>
+                                <p class="text-white font-medium">Maglajska 1, 71000 Sarajevo</p>
+                                <p class="text-xs text-gray-500">Bosna i Hercegovina</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -76,7 +101,20 @@
                 </div>
                 <div class="card">
                     <h3 class="text-lg font-semibold text-white mb-3">💡 Brzi odgovor</h3>
-                    <p class="text-sm text-gray-400">Ponudu za licence šaljemo u roku 24h. Prve konsultacije su besplatne.</p>
+                    <p class="text-sm text-gray-400">Ponudu za licence šaljemo u roku 24h. Prve konsultacije su besplatne. Implementacija počinje odmah nakon dogovora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map placeholder -->
+    <section class="max-w-6xl mx-auto px-4 mb-16">
+        <div class="card p-4">
+            <div class="w-full h-64 rounded-lg bg-gray-800 flex items-center justify-center text-gray-500">
+                <div class="text-center">
+                    <span class="text-4xl">📍</span>
+                    <p class="text-sm mt-2">Maglajska 1, 71000 Sarajevo</p>
+                    <p class="text-xs text-gray-600">Posjetite nas radnim danom 09:00 - 17:00</p>
                 </div>
             </div>
         </div>
@@ -84,7 +122,8 @@
 
     <footer class="border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 py-8 text-center text-sm text-gray-500">
-            <p>© 2026 BIXIE. Part of Bloom Group. Sarajevo, Bosnia and Herzegovina.</p>
+            <p>© 2026 BIXIE. Part of Bloom Group.</p>
+            <p class="mt-1">hello@bixie.ba | 033 922 622 | Maglajska 1, 71000 Sarajevo, Bosna i Hercegovina</p>
         </div>
     </footer>
 </body>

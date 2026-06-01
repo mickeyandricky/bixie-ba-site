@@ -37,20 +37,56 @@
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-6">
-                <a href="/services/crm" class="text-gray-400 hover:text-white text-sm transition">CRM</a>
-                <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm transition">AI Agenti</a>
-                <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm transition">Digitalna Transformacija</a>
-                <a href="/blog" class="text-gray-400 hover:text-white text-sm transition">Blog</a>
+                <div class="relative group">
+                    <a href="/services/crm" class="text-gray-400 hover:text-white text-sm">CRM ▾</a>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pregled CRM usluga</a>
+                            <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Bitrix24</a>
+                            <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Zoho CRM</a>
+                            <a href="/services/crm#monday" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Monday.com</a>
+                            <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Salesforce</a>
+                            <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pipedrive</a>
+                            <a href="/services/crm#twenty" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Twenty CRM</a>
+                            <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">HubSpot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI ▾</a>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Agenti & Automatizacija</a>
+                            <a href="/services/ai-agents#implementacija" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Implementacija</a>
+                            <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Licence</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm">Digitalna Transformacija</a>
+                <a href="/blog" class="text-gray-400 hover:text-white text-sm">Blog</a>
                 <a href="/contact" class="btn-primary text-sm">Kontakt</a>
             </div>
             <button class="md:hidden text-gray-400 text-2xl" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-3">
-            <a href="/services/crm" class="block text-gray-400 text-sm">CRM</a>
-            <a href="/services/ai-agents" class="block text-gray-400 text-sm">AI Agenti</a>
-            <a href="/services/digital-transformation" class="block text-gray-400 text-sm">Digitalna Transformacija</a>
-            <a href="/blog" class="block text-gray-400 text-sm">Blog</a>
-            <a href="/contact" class="block btn-primary text-sm text-center">Kontakt</a>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-2">
+            <div class="text-xs text-gray-500 uppercase tracking-wider pt-1">CRM</div>
+            <a href="/services/crm" class="block text-white text-sm font-medium pl-3">→ Pregled</a>
+            <a href="/services/crm#bitrix24" class="block text-gray-400 text-sm pl-6">Bitrix24</a>
+            <a href="/services/crm#zoho" class="block text-gray-400 text-sm pl-6">Zoho CRM</a>
+            <a href="/services/crm#monday" class="block text-gray-400 text-sm pl-6">Monday.com</a>
+            <a href="/services/crm#salesforce" class="block text-gray-400 text-sm pl-6">Salesforce</a>
+            <a href="/services/crm#pipedrive" class="block text-gray-400 text-sm pl-6">Pipedrive</a>
+            <a href="/services/crm#twenty" class="block text-gray-400 text-sm pl-6">Twenty CRM</a>
+            <a href="/services/crm#hubspot" class="block text-gray-400 text-sm pl-6">HubSpot</a>
+            <div class="text-xs text-gray-500 uppercase tracking-wider pt-2">AI</div>
+            <a href="/services/ai-agents" class="block text-gray-400 text-sm pl-3">→ AI Agenti</a>
+            <a href="/services/ai-agents#implementacija" class="block text-gray-400 text-sm pl-6">AI Implementacija</a>
+            <a href="/services/ai-agents#licence" class="block text-gray-400 text-sm pl-6">AI Licence</a>
+            <div class="pt-2">
+                <a href="/services/digital-transformation" class="block text-gray-400 text-sm">Digitalna Transformacija</a>
+                <a href="/blog" class="block text-gray-400 text-sm">Blog</a>
+                <a href="/contact" class="block btn-primary text-sm text-center mt-2">Kontakt</a>
+            </div>
         </div>
     </nav>
 
@@ -252,7 +288,7 @@
             <p class="text-gray-400 max-w-xl mx-auto mb-8">Zakažite besplatne konsultacije i saznajte kako vam možemo pomoći da unaprijedite poslovanje.</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="/contact" class="btn-primary">Zakažite sastanak</a>
-                <a href="mailto:info@bixie.ba" class="btn-secondary">info@bixie.ba</a>
+                <a href="mailto:hello@bixie.ba" class="btn-secondary">hello@bixie.ba</a>
             </div>
         </div>
     </section>
@@ -287,7 +323,7 @@
                 <div>
                     <h4 class="text-sm font-semibold text-white mb-3">Kontakt</h4>
                     <div class="space-y-2 text-sm text-gray-500">
-                        <p>info@bixie.ba</p>
+                        <p>hello@bixie.ba</p>
                         <p>+387 33 922 622</p>
                         <p>Maglajska 1, 71000 Sarajevo</p>
                         <p class="text-xs text-gray-600 mt-2">© 2026 BIXIE. Part of Bloom Group.</p>

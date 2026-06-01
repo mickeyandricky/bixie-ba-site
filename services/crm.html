@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Implementacija — BIXIE | Bitrix24 Partner</title>
-    <meta name="description" content="Implementacija Bitrix24 CRM sistema. Automatizacija prodaje, marketinga i podrške. Prilagođeno tvojoj branši. Bitrix24 partner sa 14+ godina iskustva.">
+    <title>CRM Implementacija — BIXIE | Bitrix24, Zoho, Salesforce, Monday.com</title>
+    <meta name="description" content="Implementacija CRM sistema: Bitrix24, Zoho, Monday.com, Salesforce, Pipedrive, Twenty. Automatizacija prodaje, marketinga i podrške za BiH firme.">
+    <meta name="keywords" content="CRM, Bitrix24, Zoho, Monday.com, Salesforce, Pipedrive, Twenty, CRM implementacija, BiH, Sarajevo">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>*{font-family:'Inter',sans-serif}body{background:#0d1219;color:#e2e8f0}.gradient-text{background:linear-gradient(135deg,#2563eb,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.card{background:#121826;border:1px solid #1e293b;border-radius:12px;padding:24px}.btn-primary{background:#2563eb;color:#fff;padding:10px 24px;border-radius:8px;font-weight:500;display:inline-block}.btn-primary:hover{background:#1d4ed8}.btn-secondary{background:0 0;color:#e2e8f0;padding:10px 24px;border-radius:8px;border:1px solid #334155;display:inline-block}.btn-secondary:hover{background:rgba(255,255,255,.05)}.badge{padding:4px 12px;border-radius:12px;font-size:12px;font-weight:500}</style>
+    <style>*{font-family:'Inter',sans-serif}body{background:#0d1219;color:#e2e8f0}.gradient-text{background:linear-gradient(135deg,#2563eb,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.card{background:#121826;border:1px solid #1e293b;border-radius:12px;padding:24px;transition:all .2s ease}.card:hover{border-color:#334155}.btn-primary{background:#2563eb;color:#fff;padding:10px 24px;border-radius:8px;font-weight:500;display:inline-block}.btn-primary:hover{background:#1d4ed8}.btn-secondary{background:0 0;color:#e2e8f0;padding:10px 24px;border-radius:8px;border:1px solid #334155;display:inline-block}.btn-secondary:hover{background:rgba(255,255,255,.05)}.badge{padding:4px 12px;border-radius:12px;font-size:12px;font-weight:500}</style>
 </head>
 <body>
     <nav class="border-b border-gray-800 sticky top-0 bg-[#0d1219]/95 backdrop-blur-sm z-50">
@@ -18,61 +19,214 @@
                 <span class="text-xl font-bold text-white">BIXIE</span>
             </a>
             <div class="hidden md:flex items-center gap-6">
-                <a href="/services/crm" class="text-white text-sm font-medium">CRM</a>
-                <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI Agenti</a>
-                <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm">Digitalna Transformacija</a>
-                <a href="/blog" class="text-gray-400 hover:text-white text-sm">Blog</a>
+                <div class="relative group">
+                    <a href="/services/crm" class="text-white text-sm font-medium">CRM ▾</a>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pregled CRM usluga</a>
+                            <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Bitrix24</a>
+                            <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Zoho CRM</a>
+                            <a href="/services/crm#monday" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Monday.com</a>
+                            <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Salesforce</a>
+                            <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pipedrive</a>
+                            <a href="/services/crm#twenty" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Twenty CRM</a>
+                            <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">HubSpot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI ▾</a>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="py-2">
+                            <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Agenti</a>
+                            <a href="/services/ai-agents#implementacija" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Implementacija</a>
+                            <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Licence</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm transition">Digitalna Transformacija</a>
+                <a href="/blog" class="text-gray-400 hover:text-white text-sm transition">Blog</a>
                 <a href="/contact" class="btn-primary text-sm">Kontakt</a>
             </div>
             <button class="md:hidden text-gray-400 text-2xl" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-3">
-            <a href="/services/crm" class="block text-white text-sm font-medium">CRM</a>
-            <a href="/services/ai-agents" class="block text-gray-400 text-sm">AI Agenti</a>
-            <a href="/services/digital-transformation" class="block text-gray-400 text-sm">Digitalna Transformacija</a>
-            <a href="/blog" class="block text-gray-400 text-sm">Blog</a>
-            <a href="/contact" class="block btn-primary text-sm text-center">Kontakt</a>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 px-4 py-3 space-y-2">
+            <div class="text-xs text-gray-500 uppercase tracking-wider pt-1">CRM</div>
+            <a href="/services/crm" class="block text-white text-sm font-medium pl-3">→ Pregled</a>
+            <a href="/services/crm#bitrix24" class="block text-gray-400 text-sm pl-6">Bitrix24</a>
+            <a href="/services/crm#zoho" class="block text-gray-400 text-sm pl-6">Zoho CRM</a>
+            <a href="/services/crm#monday" class="block text-gray-400 text-sm pl-6">Monday.com</a>
+            <a href="/services/crm#salesforce" class="block text-gray-400 text-sm pl-6">Salesforce</a>
+            <a href="/services/crm#pipedrive" class="block text-gray-400 text-sm pl-6">Pipedrive</a>
+            <a href="/services/crm#twenty" class="block text-gray-400 text-sm pl-6">Twenty CRM</a>
+            <a href="/services/crm#hubspot" class="block text-gray-400 text-sm pl-6">HubSpot</a>
+            <div class="text-xs text-gray-500 uppercase tracking-wider pt-2">AI</div>
+            <a href="/services/ai-agents" class="block text-gray-400 text-sm pl-3">→ AI Agenti</a>
+            <a href="/services/ai-agents#implementacija" class="block text-gray-400 text-sm pl-6">AI Implementacija</a>
+            <a href="/services/ai-agents#licence" class="block text-gray-400 text-sm pl-6">AI Licence</a>
+            <div class="pt-2">
+                <a href="/services/digital-transformation" class="block text-gray-400 text-sm">Digitalna Transformacija</a>
+                <a href="/blog" class="block text-gray-400 text-sm">Blog</a>
+                <a href="/contact" class="block btn-primary text-sm text-center mt-2">Kontakt</a>
+            </div>
         </div>
     </nav>
 
     <section class="max-w-6xl mx-auto px-4 py-16">
-        <span class="badge bg-blue-600/20 text-blue-400 mb-4 inline-block">Bitrix24 Partner</span>
+        <span class="badge bg-blue-600/20 text-blue-400 mb-4 inline-block">CRM Ekspertiza</span>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">CRM <span class="gradient-text">Implementacija</span></h1>
-        <p class="text-lg text-gray-400 max-w-2xl mb-12">Bitrix24 — od postavke do potpune automatizacije prodaje, marketinga i korisničke podrške. Prilagođeno tvojoj branši i poslovnim procesima.</p>
+        <p class="text-lg text-gray-400 max-w-3xl mb-12">Specijalizovani smo za implementaciju i prilagodbu vodećih CRM sistema — od Bitrix24 do Salesforce. Bez obzira koji CRM odaberete, mi ga postavljamo, integrišemo i optimiziramo za vaše poslovanje.</p>
 
-        <div class="grid md:grid-cols-2 gap-6 mb-12">
-            <div class="card">
-                <span class="text-2xl mb-3 block">⚙️</span>
-                <h3 class="text-lg font-semibold text-white mb-2">Postavka & Konfiguracija</h3>
-                <p class="text-sm text-gray-400">Kompletna postavka Bitrix24 CRM-a: pipeline, radni tokovi, email integracija, pozivi, korisničke dozvole.</p>
+        <!-- CRM Platforme -->
+        <h2 class="text-2xl font-bold text-white mb-6">CRM platforme koje implementiramo</h2>
+        <div class="grid md:grid-cols-2 gap-4 mb-16">
+
+            <div id="bitrix24" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🔷</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Bitrix24</h3>
+                    <p class="text-sm text-gray-400 mt-1">Najpopularniji CRM u BiH i regionu. Kompletan paket: prodaja, marketing, podrška, projekti, telefonija. <strong class="text-white">Official Partner.</strong></p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Postavka i konfiguracija</li>
+                        <li>✓ Automatizacija prodajnog pipelinea</li>
+                        <li>✓ Email integracija i kampanje</li>
+                        <li>✓ Telefonija (VOx, SIP)</li>
+                        <li>✓ Licence + implementacija</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <span class="text-2xl mb-3 block">🔄</span>
-                <h3 class="text-lg font-semibold text-white mb-2">Automatizacija Prodaje</h3>
-                <p class="text-sm text-gray-400">Automatska kvalifikacija leadova, scoring, email sekvence, podsjetnici — prodajni tim radi efikasnije.</p>
+
+            <div id="zoho" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🔶</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Zoho CRM</h3>
+                    <p class="text-sm text-gray-400 mt-1">Moćan CRM po povoljnoj cijeni. AI asistent (Zia), automatizacija, multikanalna komunikacija, napredna analitika.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Implementacija i migracija</li>
+                        <li>✓ Zoho AI (Zia) integracija</li>
+                        <li>✓ Integracija sa Zoho Books, Desk, Campaigns</li>
+                        <li>✓ Custom moduli i radni tokovi</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <span class="text-2xl mb-3 block">📊</span>
-                <h3 class="text-lg font-semibold text-white mb-2">Izvještaji & Analitika</h3>
-                <p class="text-sm text-gray-400">Custom dashboardi, KPI praćenje, automatizovani izvještaji — donosi odluke na osnovu podataka.</p>
+
+            <div id="monday" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🟢</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Monday.com</h3>
+                    <p class="text-sm text-gray-400 mt-1">CRM sa vizuelnim radnim tokovima. Idealan za timove koji žele brzu implementaciju i intuitivno sučelje.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Postavka CRM pipelinea</li>
+                        <li>✓ Automatizacije (radni tokovi)</li>
+                        <li>✓ Integracija sa Gmail, Slack, Teams</li>
+                        <li>✓ Custom dashboardi</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <span class="text-2xl mb-3 block">🔗</span>
-                <h3 class="text-lg font-semibold text-white mb-2">Integracije</h3>
-                <p class="text-sm text-gray-400">Povezivanje sa ERP-om, webshopom, društvenim mrežama, telefonskom centralom — sve na jednom mjestu.</p>
+
+            <div id="salesforce" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">☁️</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Salesforce</h3>
+                    <p class="text-sm text-gray-400 mt-1">Enterprise CRM za velike sisteme. Sales Cloud, Service Cloud, Marketing Cloud, Einstein AI — implementacija i administracija.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Salesforce implementacija</li>
+                        <li>✓ Einstein AI postavka</li>
+                        <li>✓ Migracija sa drugih sistema</li>
+                        <li>✓ Custom razvoj (Apex, LWC)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="pipedrive" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🟠</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Pipedrive</h3>
+                    <p class="text-sm text-gray-400 mt-1">CRM fokusiran na prodaju. Čist, jednostavan, sa odličnim AI alatima za lead scoring i predikciju prodaje.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Postavka prodajnog pipelinea</li>
+                        <li>✓ AI lead scoring</li>
+                        <li>✓ Email sinhronizacija</li>
+                        <li>✓ Integracija sa drugim alatima</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="twenty" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🔓</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Twenty CRM</h3>
+                    <p class="text-sm text-gray-400 mt-1">Open-source CRM alternativa. Moderan, brz, besplatan za samostalno hosting. Potpuna kontrola nad podacima.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ Hosting i deployment</li>
+                        <li>✓ Customizacija i proširenja</li>
+                        <li>✓ API integracije</li>
+                        <li>✓ Samostalno hosting na vašem serveru</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hubspot" class="card flex items-start gap-4 scroll-mt-24">
+                <span class="text-3xl flex-shrink-0">🟠</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">HubSpot</h3>
+                    <p class="text-sm text-gray-400 mt-1">Kompletan CRM sa marketingom, prodajom i podrškom. Besplatan početni nivo, napredne opcije za rast.</p>
+                    <ul class="text-xs text-gray-500 mt-2 space-y-1">
+                        <li>✓ HubSpot implementacija</li>
+                        <li>✓ Migracija podataka</li>
+                        <li>✓ Marketing Hub postavka</li>
+                        <li>✓ Integracija sa WordPress, Shopify</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card flex items-start gap-4" style="border:1px solid #2563eb40;">
+                <span class="text-3xl flex-shrink-0">💬</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Niste sigurni koji CRM odabrati?</h3>
+                    <p class="text-sm text-gray-400 mt-1">Radimo besplatnu analizu potreba i preporučujemo najbolji CRM za vaše poslovanje — bez obaveze kupovine.</p>
+                    <a href="/contact" class="text-blue-400 text-sm mt-2 inline-block hover:underline">Zakažite besplatne konsultacije →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Proces -->
+        <h2 class="text-2xl font-bold text-white mb-6">Kako implementiramo CRM</h2>
+        <div class="grid md:grid-cols-4 gap-4 mb-16">
+            <div class="card text-center">
+                <span class="text-3xl font-bold text-blue-400 block mb-2">1</span>
+                <h3 class="text-sm font-semibold text-white">Analiza potreba</h3>
+                <p class="text-xs text-gray-500 mt-1">Mapiranje procesa i identifikacija zahtjeva</p>
+            </div>
+            <div class="card text-center">
+                <span class="text-3xl font-bold text-blue-400 block mb-2">2</span>
+                <h3 class="text-sm font-semibold text-white">Postavka & Konfiguracija</h3>
+                <p class="text-xs text-gray-500 mt-1">Instalacija, podešavanje, import podataka</p>
+            </div>
+            <div class="card text-center">
+                <span class="text-3xl font-bold text-blue-400 block mb-2">3</span>
+                <h3 class="text-sm font-semibold text-white">Integracije</h3>
+                <p class="text-xs text-gray-500 mt-1">Povezivanje sa postojećim sistemima</p>
+            </div>
+            <div class="card text-center">
+                <span class="text-3xl font-bold text-blue-400 block mb-2">4</span>
+                <h3 class="text-sm font-semibold text-white">Obuka & Podrška</h3>
+                <p class="text-xs text-gray-500 mt-1">Treniranje tima i kontinuirana podrška</p>
             </div>
         </div>
 
+        <!-- CTA -->
         <div class="card text-center py-8" style="border:1px solid #2563eb40;">
-            <h2 class="text-2xl font-bold text-white mb-4">Bitrix24 licence uz implementaciju</h2>
-            <p class="text-gray-400 mb-6">Ponuda za Bitrix24 licence + implementaciju — dostava u roku 24h.</p>
+            <h2 class="text-2xl font-bold text-white mb-4">Spremni za novi CRM?</h2>
+            <p class="text-gray-400 mb-6">Besplatne konsultacije i ponuda u roku 24h.</p>
             <a href="/contact" class="btn-primary">Zatražite ponudu</a>
         </div>
     </section>
 
     <footer class="border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 py-8 text-center text-sm text-gray-500">
-            <p>© 2026 BIXIE. Part of Bloom Group.</p>
+            <p>© 2026 BIXIE. Part of Bloom Group. hello@bixie.ba | 033 922 622 | Maglajska 1, Sarajevo</p>
         </div>
     </footer>
 </body>
