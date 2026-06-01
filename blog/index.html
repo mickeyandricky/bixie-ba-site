@@ -53,24 +53,50 @@ footer a:hover{color:#f7f8f8}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);margin-top:48px;padding-top:24px;text-align:center;font-size:13px;color:#62666d}
 @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.blog-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}}
 </style>
+  <link rel="canonical" href="https://bixie.ba/blog">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BIXIE",
+  "url": "https://bixie.ba",
+  "logo": "https://bixie.ba/og-image.png",
+  "description": "CRM, AI Agenti i Digitalna Transformacija za firme u Bosni i Hercegovini.",
+  "address": { "@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "addressCountry": "BA" },
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+387-33-922-622", "email": "hello@bixie.ba", "contactType": "sales" },
+  "sameAs": ["https://www.linkedin.com/company/bixie"]
+}
+</script>
 </head>
 <body>
-<nav><div class="nav-inner">
-<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a>
+<nav>
+<div class="nav-inner">
+<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>
+BIXIE
+</a>
 <div class="nav-links">
 <div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
 <div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
-<a href="/services/digital-transformation">Digitalna Transformacija</a>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a>
 <a href="/blog">Blog</a>
 <a href="/contact" class="cta">Kontakt</a>
 </div>
-<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active');this.classList.toggle('active')"><span></span><span></span><span></span></button></div>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active');this.classList.toggle('active')"><span></span><span></span><span></span></button>
+</div>
 <div id="mobileMenu" class="mobile-menu">
-<div class="mobile-label">CRM</div><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
-<div class="mobile-label">AI</div><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
-<a href="/services/digital-transformation" style="margin-top:8px">Digitalna Transformacija</a><a href="/blog">Blog</a>
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a><a href="/blog">Blog</a>
 <a href="/contact" style="margin-top:8px;background:#5e6ad2;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:510">Kontakt</a>
-</div></nav>
+</div>
+</nav>
 
 <section style="padding:80px 24px">
 <div style="max-width:1200px;margin:0 auto 48px">
@@ -91,12 +117,14 @@ footer a:hover{color:#f7f8f8}
 </div>
 </section>
 
-<footer><div class="footer-inner">
+<footer>
+<div class="footer-inner">
 <div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f7f8f8;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
-<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a></div>
-<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a></div>
 <div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
 </div>
-<div class="footer-bottom">2026 BIXIE. All rights reserved.</div></footer>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
 </body>
 </html>
