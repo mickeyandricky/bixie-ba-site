@@ -22,34 +22,40 @@ nav{position:sticky;top:0;z-index:50;background:rgba(8,9,10,0.95);backdrop-filte
 .dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
 .dropdown-menu a{display:block;padding:8px 12px;border-radius:4px;font-size:13px;font-weight:400;color:#d0d6e0;text-decoration:none}
 .dropdown-menu a:hover{background:rgba(255,255,255,0.04);color:#f7f8f8}
-.btn-primary{display:inline-flex;align-items:center;background:#5e6ad2;color:#fff;padding:8px 16px;border-radius:6px;font-size:15px;font-weight:510;text-decoration:none;transition:background .15s}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;background:#5e6ad2;color:#fff;padding:10px 24px;border-radius:6px;border:none;font-size:15px;font-weight:510;font-family:inherit;font-feature-settings:inherit;cursor:pointer;transition:background .15s;width:100%}
 .btn-primary:hover{background:#828fff}
+.btn-primary:disabled{opacity:0.5;cursor:not-allowed}
 .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:13px;font-weight:510;color:#d0d6e0;margin-bottom:6px;letter-spacing:-0.13px}
+.form-group input,.form-group textarea{width:100%;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:10px 14px;font-size:15px;font-family:inherit;color:#f7f8f8;outline:none;transition:border-color .15s}
+.form-group input:focus,.form-group textarea:focus{border-color:#5e6ad2}
+.form-group textarea{min-height:120px;resize:vertical}
 .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:20px;height:1.5px;background:#d0d6e0;border-radius:1px}
 .mobile-menu{display:none;border-top:1px solid rgba(255,255,255,0.05);padding:12px 24px}
 .mobile-menu a{display:block;padding:8px 0;font-size:15px;color:#d0d6e0;text-decoration:none}
 .mobile-menu .mobile-label{font-size:11px;color:#62666d;text-transform:uppercase;letter-spacing:0.5px;margin-top:12px;margin-bottom:4px}
+.success-msg{display:none;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:8px;padding:20px;text-align:center;color:#10b981;font-size:15px;line-height:1.6}
+.error-msg{display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:12px;text-align:center;color:#ef4444;font-size:14px;margin-top:12px}
 footer{border-top:1px solid rgba(255,255,255,0.05);padding:48px 24px}
 .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
 footer h4{font-size:13px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.13px}
 footer a,footer p{font-size:14px;color:#8a8f98;text-decoration:none;line-height:1.8}
 footer a:hover{color:#f7f8f8}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);margin-top:48px;padding-top:24px;text-align:center;font-size:13px;color:#62666d}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
 @media(max-width:768px){
   .nav-links{display:none}
   .hamburger{display:flex}
+  .contact-grid{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr;gap:32px}
 }
 </style>
 </head>
 <body>
-<nav>
-<div class="nav-inner">
-<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>
-BIXIE
-</a>
+<nav><div class="nav-inner">
+<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a>
 <div class="nav-links">
 <div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
 <div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
@@ -57,13 +63,10 @@ BIXIE
 <a href="/blog">Blog</a>
 <a href="/contact" class="cta">Kontakt</a>
 </div>
-<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active');this.classList.toggle('active')"><span></span><span></span><span></span></button>
-</div>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active');this.classList.toggle('active')"><span></span><span></span><span></span></button></div>
 <div id="mobileMenu" class="mobile-menu">
-<div class="mobile-label">CRM</div>
-<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
-<div class="mobile-label">AI</div>
-<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
+<div class="mobile-label">CRM</div><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
 <a href="/services/digital-transformation" style="margin-top:8px">Digitalna Transformacija</a><a href="/blog">Blog</a>
 <a href="/contact" style="margin-top:8px;background:#5e6ad2;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:510">Kontakt</a>
 </div>
@@ -74,45 +77,128 @@ BIXIE
 <div style="font-size:13px;font-weight:510;color:#7170ff;letter-spacing:-0.13px;margin-bottom:8px;text-transform:uppercase">Kontakt</div>
 <h1 style="font-size:32px;font-weight:510;line-height:1.13;letter-spacing:-0.704px;color:#f7f8f8;margin-bottom:16px">Kontaktirajte nas</h1>
 <p style="font-size:16px;line-height:1.5;color:#8a8f98;margin-bottom:48px">Posaljite upit, zatrazite ponudu ili zakazite besplatne konsultacije. Odgovaramo u roku 24h.</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-<div class="card">
-<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.165px">Email</h3>
-<p style="font-size:16px;color:#d0d6e0"><a href="mailto:hello@bixie.ba" style="color:#7170ff;text-decoration:none">hello@bixie.ba</a></p>
-<p style="font-size:14px;color:#8a8f98;margin-top:4px">Za upite i ponude</p>
+
+<div class="contact-grid">
+<div class="card" style="padding:32px">
+<div class="success-msg" id="successMsg">Vasa poruka je poslana. Odgovaramo u roku 24h.</div>
+<form id="contactForm">
+<div class="form-group">
+<label for="name">Ime i Prezime *</label>
+<input type="text" id="name" name="name" required placeholder="Vase ime i prezime">
+</div>
+<div class="form-group">
+<label for="email">Email *</label>
+<input type="email" id="email" name="email" required placeholder="vas@email.com">
+</div>
+<div class="form-group">
+<label for="phone">Telefon</label>
+<input type="tel" id="phone" name="phone" placeholder="033 922 622">
+</div>
+<div class="form-group">
+<label for="company">Kompanija</label>
+<input type="text" id="company" name="company" placeholder="Naziv vase firme">
+</div>
+<div class="form-group">
+<label for="message">Poruka *</label>
+<textarea id="message" name="message" required placeholder="Opisite sta vam je potrebno..."></textarea>
+</div>
+<button type="submit" class="btn-primary" id="submitBtn">Posaljite upit</button>
+<div class="error-msg" id="errorMsg"></div>
+</form>
+</div>
+
+<div>
+<div class="card" style="margin-bottom:16px">
+<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:8px;letter-spacing:-0.165px">Email</h3>
+<p style="font-size:15px;color:#d0d6e0"><a href="mailto:hello@bixie.ba" style="color:#7170ff;text-decoration:none">hello@bixie.ba</a></p>
+<p style="font-size:13px;color:#8a8f98;margin-top:4px">Za upite i ponude</p>
+</div>
+<div class="card" style="margin-bottom:16px">
+<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:8px;letter-spacing:-0.165px">Telefon</h3>
+<p style="font-size:15px;color:#d0d6e0">033 922 622</p>
+<p style="font-size:13px;color:#8a8f98;margin-top:4px">Radnim danom 09:00 - 17:00</p>
+</div>
+<div class="card" style="margin-bottom:16px">
+<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:8px;letter-spacing:-0.165px">Adresa</h3>
+<p style="font-size:15px;color:#d0d6e0">Maglajska 1</p>
+<p style="font-size:13px;color:#8a8f98;margin-top:4px">71000 Sarajevo, Bosna i Hercegovina</p>
 </div>
 <div class="card">
-<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.165px">Telefon</h3>
-<p style="font-size:16px;color:#d0d6e0">033 922 622</p>
-<p style="font-size:14px;color:#8a8f98;margin-top:4px">Radnim danom 09:00 - 17:00</p>
+<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:8px;letter-spacing:-0.165px">Ponude i Licence</h3>
+<p style="font-size:15px;color:#d0d6e0">Bitrix24, AI, Google, Microsoft</p>
+<p style="font-size:13px;color:#8a8f98;margin-top:4px">Izdajemo ponude za pravna lica sa pecatom i potpisom</p>
 </div>
-<div class="card">
-<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.165px">Adresa</h3>
-<p style="font-size:16px;color:#d0d6e0">Maglajska 1</p>
-<p style="font-size:14px;color:#8a8f98;margin-top:4px">71000 Sarajevo, Bosna i Hercegovina</p>
-</div>
-<div class="card">
-<h3 style="font-size:18px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.165px">Ponude i Licence</h3>
-<p style="font-size:16px;color:#d0d6e0">Bitrix24, AI, Google, Microsoft</p>
-<p style="font-size:14px;color:#8a8f98;margin-top:4px">Izdajemo ponude za pravna lica</p>
 </div>
 </div>
 </div>
 </section>
 
-<footer>
-<div class="footer-inner">
-<div>
-<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f7f8f8;margin-bottom:12px">
-<svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>
-BIXIE
-</a>
-<p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p>
-</div>
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const success = document.getElementById('successMsg');
+  const error = document.getElementById('errorMsg');
+  btn.disabled = true;
+  btn.textContent = 'Slanje...';
+  error.style.display = 'none';
+  success.style.display = 'none';
+  try {
+    const resp = await fetch('https://204.168.130.130/api/contact', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        message: document.getElementById('message').value
+      })
+    });
+    if (resp.ok) {
+      success.style.display = 'block';
+      this.reset();
+    } else {
+      const data = await resp.json();
+      error.textContent = data.error || 'Greska pri slanju. Molimo pokusajte ponovo.';
+      error.style.display = 'block';
+    }
+  } catch(err) {
+    // Fallback: try via bloom.ba domain if available
+    try {
+      const resp2 = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          company: document.getElementById('company').value,
+          message: document.getElementById('message').value
+        })
+      });
+      if (resp2.ok) {
+        success.style.display = 'block';
+        this.reset();
+        btn.disabled = false;
+        btn.textContent = 'Posaljite upit';
+        return;
+      }
+    } catch(e2) {}
+    error.textContent = 'Greska pri slanju. Molimo pokusajte putem emaila: hello@bixie.ba';
+    error.style.display = 'block';
+  }
+  btn.disabled = false;
+  btn.textContent = 'Posaljite upit';
+});
+</script>
+
+<footer><div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f7f8f8;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
 <div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a></div>
 <div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a></div>
 <div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
 </div>
-<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
-</footer>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div></footer>
 </body>
 </html>
