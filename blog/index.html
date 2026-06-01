@@ -1,106 +1,91 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — BIXIE | CRM, AI, Digitalna Transformacija</title>
-    <meta name="description" content="Blog o CRM implementaciji (Bitrix24, Zoho, Salesforce), AI agentima, Agentic AI, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
-    <meta name="keywords" content="BIXIE blog, CRM, AI, Bitrix24, Zoho, Salesforce, AI agenti, RPA, digitalna transformacija, BiH">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>*{font-family:'Inter',sans-serif}body{background:#0d1219;color:#e2e8f0}.card{background:#121826;border:1px solid #1e293b;border-radius:12px;padding:24px;transition:all .2s ease}.card:hover{border-color:#334155}.btn-primary{background:#2563eb;color:#fff;padding:10px 24px;border-radius:8px;font-weight:500;display:inline-block}.btn-secondary{background:0 0;color:#e2e8f0;padding:10px 24px;border-radius:8px;border:1px solid #334155;display:inline-block}.badge{padding:4px 12px;border-radius:12px;font-size:12px;font-weight:500}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Blog — BIXIE</title>
+<meta name="description" content="Blog o CRM implementaciji, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{background:#08090a;color:#d0d6e0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-feature-settings:'cv01','ss03';-webkit-font-smoothing:antialiased}
+nav{position:sticky;top:0;z-index:50;background:rgba(8,9,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{font-size:13px;font-weight:510;color:#d0d6e0;text-decoration:none;letter-spacing:-0.13px;transition:color .15s}
+.nav-links a:hover{color:#f7f8f8}
+.nav-links .cta{background:#5e6ad2;color:#fff;padding:6px 14px;border-radius:6px;font-weight:510}
+.nav-links .cta:hover{background:#7170ff}
+.dropdown{position:relative}
+.dropdown-menu{position:absolute;top:100%;left:0;margin-top:8px;min-width:200px;background:#191a1b;border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:6px;opacity:0;visibility:hidden;transition:all .15s;z-index:100}
+.dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
+.dropdown-menu a{display:block;padding:8px 12px;border-radius:4px;font-size:13px;font-weight:400;color:#d0d6e0;text-decoration:none}
+.dropdown-menu a:hover{background:rgba(255,255,255,0.04);color:#f7f8f8}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:20px;height:1.5px;background:#d0d6e0;border-radius:1px}
+.mobile-menu{display:none;border-top:1px solid rgba(255,255,255,0.05);padding:12px 24px}
+.mobile-menu a{display:block;padding:8px 0;font-size:15px;color:#d0d6e0;text-decoration:none}
+.mobile-menu .mobile-label{font-size:11px;color:#62666d;text-transform:uppercase;letter-spacing:0.5px;margin-top:12px;margin-bottom:4px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1200px;margin:0 auto}
+.blog-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:20px;text-decoration:none;display:block;transition:all .15s}
+.blog-card:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12)}
+.blog-card h2{font-size:16px;font-weight:510;color:#f7f8f8;line-height:1.4;letter-spacing:-0.165px;margin-bottom:6px}
+.blog-card p{font-size:14px;color:#8a8f98;line-height:1.5}
+.blog-card .meta{font-size:12px;color:#62666d;margin-top:12px}
+.badge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:9999px;font-size:12px;font-weight:510;color:#d0d6e0;border:1px solid rgb(35,37,42);margin-bottom:8px}
+.badge-indigo{background:rgba(94,106,210,0.15);color:#7170ff;border-color:rgba(94,106,210,0.3)}
+footer{border-top:1px solid rgba(255,255,255,0.05);padding:48px 24px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+footer h4{font-size:13px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.13px}
+footer a,footer p{font-size:14px;color:#8a8f98;text-decoration:none;line-height:1.8}
+footer a:hover{color:#f7f8f8}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);margin-top:48px;padding-top:24px;text-align:center;font-size:13px;color:#62666d}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.blog-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}}
+</style>
 </head>
 <body>
-    <nav class="border-b border-gray-800 sticky top-0 bg-[#0d1219]/95 backdrop-blur-sm z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3"><div class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">B</div><span class="text-xl font-bold text-white">BIXIE</span></a>
-            <div class="hidden md:flex items-center gap-6">
-                <div class="relative group"><a href="/services/crm" class="text-gray-400 hover:text-white text-sm">CRM ▾</a><div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50"><div class="py-2"><a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pregled CRM usluga</a><a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Bitrix24</a><a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Zoho CRM</a><a href="/services/crm#monday" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Monday.com</a><a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Salesforce</a><a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Pipedrive</a><a href="/services/crm#twenty" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">Twenty CRM</a><a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">HubSpot</a></div></div></div>
-                <div class="relative group"><a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm">AI ▾</a><div class="absolute top-full left-0 mt-2 w-56 bg-[#121826] border border-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50"><div class="py-2"><a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Agenti & Automatizacija</a><a href="/services/ai-agents#implementacija" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Implementacija</a><a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-gray-800/50">AI Licence</a></div></div></div>
-                <a href="/services/digital-transformation" class="text-gray-400 hover:text-white text-sm">Digitalna Transformacija</a>
-                <a href="/blog" class="text-white text-sm font-medium">Blog</a>
-                <a href="/contact" class="btn-primary text-sm">Kontakt</a>
-            </div>
-        </div>
-    </nav>
+<nav><div class="nav-inner">
+<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
+<a href="/services/digital-transformation">Digitalna Transformacija</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="cta">Kontakt</a>
+</div>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active');this.classList.toggle('active')"><span></span><span></span><span></span></button></div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
+<a href="/services/digital-transformation" style="margin-top:8px">Digitalna Transformacija</a><a href="/blog">Blog</a>
+<a href="/contact" style="margin-top:8px;background:#5e6ad2;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:510">Kontakt</a>
+</div></nav>
 
-    <section class="max-w-6xl mx-auto px-4 py-16">
-        <h1 class="text-4xl font-bold text-white mb-2">📝 Blog</h1>
-        <p class="text-gray-400 mb-12">Savjeti, vodiči i analize o CRM sistemima, AI agentima, RPA i digitalnoj transformaciji.</p>
+<section style="padding:80px 24px">
+<div style="max-width:1200px;margin:0 auto 48px">
+<h1 style="font-size:48px;font-weight:510;line-height:1;letter-spacing:-1.056px;color:#f7f8f8;margin-bottom:12px">Blog</h1>
+<p style="font-size:18px;line-height:1.6;color:#8a8f98">Savjeti, vodiči i analize o CRM sistemima, AI agentima i digitalnoj transformaciji.</p>
+</div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="blog-grid">
+<a href="/blog/posts/ai-licence-obrazovne-ustanove" class="blog-card"><span class="badge badge-indigo">AI Licence</span><h2>AI Licence za Obrazovne Ustanove</h2><p>ChatGPT Edu, Google Workspace for Education, Microsoft 365 Education. Cijene i akademski popusti.</p><div class="meta">3. Juni 2026</div></a>
+<a href="/blog/posts/bitrix24-vs-ai-crm" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">CRM</span><h2>Bitrix24 vs AI-Powered CRM</h2><p>Poređenje Bitrix24 i modernih AI CRM rješenja.</p><div class="meta">1. Juni 2026</div></a>
+<a href="/blog/posts/rpa-automatizacija-procesa" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">RPA</span><h2>RPA i AI Automatizacija</h2><p>Automatizacija procesa kombinacijom RPA i AI agenata.</p><div class="meta">28. Maj 2026</div></a>
+<a href="/blog/posts/bitrix24-crm-implementacija-vodic" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">Bitrix24</span><h2>Bitrix24 Implementacija: Vodič</h2><p>Sve faze implementacije Bitrix24 CRM-a korak po korak.</p><div class="meta">20. Maj 2026</div></a>
+<a href="/blog/posts/ai-agenti-customer-support" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">AI</span><h2>AI Agenti za Customer Support</h2><p>Kako postaviti AI agente za korisničku podršku.</p><div class="meta">15. Maj 2026</div></a>
+<a href="/blog/posts/agentic-ai-autonomni-agenti" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">Agentic AI</span><h2>Agentic AI: Autonomni Agenti</h2><p>Autonomni agenti koji preduzimaju akcije u poslovanju.</p><div class="meta">10. Maj 2026</div></a>
+<a href="/blog/posts/zoho-crm-implementacija" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">Zoho</span><h2>Zoho CRM: Vodič za Implementaciju</h2><p>Zoho CRM implementacija sa AI asistentom Zia.</p><div class="meta">5. Maj 2026</div></a>
+<a href="/blog/posts/salesforce-crm-implementacija" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">Salesforce</span><h2>Salesforce za Srednje Kompanije</h2><p>Salesforce implementacija, cijene i Einstein AI.</p><div class="meta">28. April 2026</div></a>
+<a href="/blog/posts/monday-crm-produktivnost" class="blog-card"><span class="badge" style="border-color:rgba(94,106,210,0.3);color:#7170ff">Monday.com</span><h2>Monday.com CRM: Produktivnost</h2><p>Kako Monday.com CRM pomaže timovima.</p><div class="meta">20. April 2026</div></a>
+</div>
+</section>
 
-            <a href="/blog/posts/ai-licence-obrazovne-ustanove" class="card group">
-                <span class="badge bg-blue-600/20 text-blue-400 mb-3 inline-block">AI Licence</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">AI Licence za Obrazovne Ustanove u BiH</h2>
-                <p class="text-sm text-gray-400 mb-3">ChatGPT Edu, Google Workspace for Education, Microsoft 365 Education. Cijene, akademski popusti, procedure nabavke.</p>
-                <span class="text-xs text-gray-500">3. Juni 2026</span>
-            </a>
-
-            <a href="/blog/posts/bitrix24-vs-ai-crm" class="card group">
-                <span class="badge bg-purple-600/20 text-purple-400 mb-3 inline-block">CRM</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Bitrix24 vs AI-Powered CRM: Šta odabrati?</h2>
-                <p class="text-sm text-gray-400 mb-3">Poređenje tradicionalnog Bitrix24 CRM-a i modernih AI CRM rješenja. Kada ostati na Bitrix24, a kada uvesti AI agente?</p>
-                <span class="text-xs text-gray-500">1. Juni 2026</span>
-            </a>
-
-            <a href="/blog/posts/rpa-automatizacija-procesa" class="card group">
-                <span class="badge bg-green-600/20 text-green-400 mb-3 inline-block">RPA</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">RPA i AI Automatizacija: Vodič za 2026</h2>
-                <p class="text-sm text-gray-400 mb-3">Kako automatizirati poslovne procese kombinacijom RPA i AI agenata. Praktični primjeri i uštede do 70%.</p>
-                <span class="text-xs text-gray-500">28. Maj 2026</span>
-            </a>
-
-            <a href="/blog/posts/bitrix24-crm-implementacija-vodic" class="card group">
-                <span class="badge bg-blue-600/20 text-blue-400 mb-3 inline-block">Bitrix24</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Bitrix24 Implementacija: Vodič Korak po Korak</h2>
-                <p class="text-sm text-gray-400 mb-3">Sve faze implementacije Bitrix24 CRM-a — od planiranja i instalacije do obuke tima i optimizacije.</p>
-                <span class="text-xs text-gray-500">20. Maj 2026</span>
-            </a>
-
-            <a href="/blog/posts/ai-agenti-customer-support" class="card group">
-                <span class="badge bg-purple-600/20 text-purple-400 mb-3 inline-block">AI</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">AI Agenti za Customer Support: Vodič</h2>
-                <p class="text-sm text-gray-400 mb-3">Kako postaviti AI agente za korisničku podršku. WhatsApp, web chat, email — smanjenje troškova do 70%.</p>
-                <span class="text-xs text-gray-500">15. Maj 2026</span>
-            </a>
-
-            <a href="/blog/posts/agentic-ai-autonomni-agenti" class="card group">
-                <span class="badge bg-purple-600/20 text-purple-400 mb-3 inline-block">Agentic AI</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Agentic AI: Autonomni Agenti</h2>
-                <p class="text-sm text-gray-400 mb-3">Šta je Agentic AI i kako autonomni agenti koji preduzimaju akcije mijenjaju poslovanje.</p>
-                <span class="text-xs text-gray-500">10. Maj 2026</span>
-            </a>
-
-            <a href="/blog/posts/zoho-crm-implementacija" class="card group">
-                <span class="badge bg-orange-600/20 text-orange-400 mb-3 inline-block">Zoho</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Zoho CRM: Vodič za Implementaciju</h2>
-                <p class="text-sm text-gray-400 mb-3">Zoho CRM implementacija korak po korak. AI asistent Zia, integracije, cijene — prilagođeno BiH firmama.</p>
-                <span class="text-xs text-gray-500">5. Maj 2026</span>
-            </a>
-
-            <a href="/blog/posts/salesforce-crm-implementacija" class="card group">
-                <span class="badge bg-blue-600/20 text-blue-400 mb-3 inline-block">Salesforce</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Salesforce za Srednje Kompanije u BiH</h2>
-                <p class="text-sm text-gray-400 mb-3">Da li je Salesforce pravi izbor za vašu firmu? Cijene, implementacija, Einstein AI, migracija sa drugih sistema.</p>
-                <span class="text-xs text-gray-500">28. April 2026</span>
-            </a>
-
-            <a href="/blog/posts/monday-crm-produktivnost" class="card group">
-                <span class="badge bg-green-600/20 text-green-400 mb-3 inline-block">Monday.com</span>
-                <h2 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition">Monday.com CRM: Produktivnost Timova</h2>
-                <p class="text-sm text-gray-400 mb-3">Kako Monday.com CRM pomaže timovima da budu produktivniji. Automatizacije, integracije, prednosti za BiH firme.</p>
-                <span class="text-xs text-gray-500">20. April 2026</span>
-            </a>
-
-        </div>
-    </section>
-
-    <footer class="border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-center text-sm text-gray-500">
-            <p>© 2026 BIXIE. Part of Bloom Group. hello@bixie.ba | 033 922 622 | Maglajska 1, 71000 Sarajevo</p>
-        </div>
-    </footer>
+<footer><div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f7f8f8;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div></footer>
 </body>
 </html>
