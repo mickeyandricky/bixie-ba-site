@@ -1,22 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bixie.ba/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://bixie.ba/services/crm</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/services/ai-agents</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/services/digital-transformation</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://bixie.ba/contact</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/services/rpa</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/ai-providers</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/privacy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/ai-licence-obrazovne-ustanove</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/bitrix24-vs-ai-crm</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/rpa-automatizacija-procesa</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/bitrix24-crm-implementacija-vodic</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/salesforce-crm-implementacija</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/zoho-crm-implementacija</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/monday-crm-produktivnost</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/ai-agenti-customer-support</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://bixie.ba/blog/posts/agentic-ai-autonomni-agenti</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bixie.ba</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/about"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/about"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/services/crm</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/crm"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/services/ai-agents</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-agents"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/services/digital-transformation</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/services/rpa</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/rpa"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/ai-providers</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-providers"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/contact"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/privacy</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/privacy"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/about"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/about"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/services/crm</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/crm"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/services/ai-agents</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-agents"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/services/digital-transformation</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/services/rpa</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/rpa"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/ai-providers</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-providers"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/blog</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/contact"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/privacy</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/privacy"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/about"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/about"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/services/crm</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/crm"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/services/ai-agents</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-agents"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/services/digital-transformation</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/services/rpa</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/rpa"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/ai-providers</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-providers"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/blog</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/contact"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/privacy</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/privacy"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-licence-obrazovne-ustanove</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/ai-licence-obrazovne-ustanove"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/ai-licence-obrazovne-ustanove"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-licence-obrazovne-ustanove"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-licence-obrazovne-ustanove"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/bitrix24-vs-ai-crm</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/bitrix24-vs-ai-crm"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/bitrix24-vs-ai-crm"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/bitrix24-vs-ai-crm"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/bitrix24-vs-ai-crm"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/rpa-automatizacija-procesa</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/rpa-automatizacija-procesa"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/rpa-automatizacija-procesa"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/rpa-automatizacija-procesa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/rpa-automatizacija-procesa"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/bitrix24-crm-implementacija-vodic</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/bitrix24-crm-implementacija-vodic"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/bitrix24-crm-implementacija-vodic"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/bitrix24-crm-implementacija-vodic"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/bitrix24-crm-implementacija-vodic"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/salesforce-crm-implementacija</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/salesforce-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/salesforce-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/salesforce-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/salesforce-crm-implementacija"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/zoho-crm-implementacija</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/zoho-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/zoho-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/zoho-crm-implementacija"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/zoho-crm-implementacija"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/monday-crm-produktivnost</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/monday-crm-produktivnost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/monday-crm-produktivnost"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/monday-crm-produktivnost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/monday-crm-produktivnost"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-agenti-customer-support</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/ai-agenti-customer-support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/ai-agenti-customer-support"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-agenti-customer-support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-agenti-customer-support"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/agentic-ai-autonomni-agenti</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/agentic-ai-autonomni-agenti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/agentic-ai-autonomni-agenti"/>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/agentic-ai-autonomni-agenti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/agentic-ai-autonomni-agenti"/>
+  </url>
 </urlset>
