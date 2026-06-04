@@ -17,50 +17,11 @@
 
 <meta name="description" content="bitrix24, Zoho CRM, Salesforce, Monday.com, Pipedrive, Twenty CRM i HubSpot. Implementacija i optimizacija CRM sistema za firme u BiH.">
 <meta name="keywords" content="CRM, Bitrix24, Zoho, Salesforce, Monday.com, Pipedrive, Twenty CRM, HubSpot, implementacija, BiH">
+<link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#08090a;color:#d0d6e0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-feature-settings:'cv01','ss03';-webkit-font-smoothing:antialiased}
-nav{position:sticky;top:0;z-index:50;background:rgba(8,9,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.05)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
-.nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:510;color:#d0d6e0;text-decoration:none;letter-spacing:-0.13px;transition:color .15s}
-.nav-links a:hover{color:#f7f8f8}
-.nav-links .cta{background:#5e6ad2;color:#fff;padding:6px 14px;border-radius:6px;font-weight:510}
-.nav-links .cta:hover{background:#7170ff}
-.dropdown{position:relative}
-.dropdown-menu{position:absolute;top:100%;left:0;margin-top:8px;min-width:200px;background:#191a1b;border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:6px;opacity:0;visibility:hidden;transition:all .15s;z-index:100}
-.dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
-.dropdown-menu a{display:block;padding:8px 12px;border-radius:4px;font-size:13px;font-weight:400;color:#d0d6e0;text-decoration:none}
-.dropdown-menu a:hover{background:rgba(255,255,255,0.04);color:#f7f8f8}
-.btn-primary{display:inline-flex;align-items:center;background:#5e6ad2;color:#fff;padding:8px 16px;border-radius:6px;font-size:15px;font-weight:510;text-decoration:none;transition:background .15s}
-.btn-primary:hover{background:#828fff}
-.btn-ghost{display:inline-flex;align-items:center;background:rgba(255,255,255,0.02);color:#e2e4e7;padding:8px 16px;border-radius:6px;border:1px solid rgb(36,40,44);font-size:15px;font-weight:510;text-decoration:none;transition:all .15s}
-.btn-ghost:hover{background:rgba(255,255,255,0.04);color:#f7f8f8}
-.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px;transition:all .15s}
-.card:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12)}
-.card h3{font-size:18px;font-weight:510;line-height:1.33;letter-spacing:-0.165px;color:#f7f8f8;margin-bottom:8px}
-.card p{font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px}
-.badge{display:inline-flex;align-items:center;padding:2px 10px;border-radius:9999px;font-size:12px;font-weight:510;color:#d0d6e0;border:1px solid rgb(35,37,42);margin-bottom:12px}
-.badge-indigo{background:rgba(94,106,210,0.15);color:#7170ff;border-color:rgba(94,106,210,0.3)}
-.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
-.hamburger span{display:block;width:20px;height:1.5px;background:#d0d6e0;border-radius:1px}
-.mobile-menu{display:none;border-top:1px solid rgba(255,255,255,0.05);padding:12px 24px}
-.mobile-menu a{display:block;padding:8px 0;font-size:15px;color:#d0d6e0;text-decoration:none}
-.mobile-menu .mobile-label{font-size:11px;color:#62666d;text-transform:uppercase;letter-spacing:0.5px;margin-top:12px;margin-bottom:4px}
-footer{border-top:1px solid rgba(255,255,255,0.05);padding:48px 24px}
-.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
-footer h4{font-size:13px;font-weight:510;color:#f7f8f8;margin-bottom:16px;letter-spacing:-0.13px}
-footer a,footer p{font-size:14px;color:#8a8f98;text-decoration:none;line-height:1.8}
-footer a:hover{color:#f7f8f8}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);margin-top:48px;padding-top:24px;text-align:center;font-size:13px;color:#62666d}
-@media(max-width:768px){
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .footer-inner{grid-template-columns:1fr;gap:32px}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
   <link rel="canonical" href="https://bixie.ba/services/crm">
 <script type="application/ld+json">
 {
@@ -98,10 +59,7 @@ footer a:hover{color:#f7f8f8}
 <body>
 <nav>
 <div class="nav-inner">
-<a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:18px;font-weight:510;color:#f7f8f8;letter-spacing:-0.24px">
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>
-BIXIE
-</a>
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
 <div class="nav-links">
 <div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
 <div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
@@ -121,7 +79,7 @@ BIXIE
 <a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
 <a href="/about">O nama</a>
 <a href="/ai-providers">AI Licence</a><a href="/blog">Blog</a>
-<a href="/contact" style="margin-top:8px;background:#5e6ad2;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:510">Kontakt</a>
+<a href="/contact" style="margin-top:8px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:510">Kontakt</a>
 </div>
 </nav>
 
@@ -131,7 +89,7 @@ BIXIE
 <h1>CRM rjesenja</h1>
 <p style="font-size:18px;line-height:1.6;color:#8a8f98;max-width:600px;margin-bottom:48px">Implementacija, migracija i optimizacija CRM sistema. Official Bitrix24 partner za Bosnu i Hercegovinu.</p>
 
-<div id="bitrix24" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="bitrix24" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Bitrix24</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Official Bitrix24 partner. Kompletan CRM sa ugrađenom telefonom, HR modulima, email marketingom i disk prostorom. Od besplatnog plana do enterprise rjesenja.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -142,7 +100,7 @@ BIXIE
 </div>
 </div>
 
-<div id="zoho" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="zoho" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Zoho CRM</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Zoho CRM sa AI asistentom Zia. Automatsko bodovanje leadova, predviđanje prodaje i napredna analitika. Integracija sa Zoho ekosistemom.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -152,7 +110,7 @@ BIXIE
 </div>
 </div>
 
-<div id="monday" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="monday" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Monday.com CRM</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Monday.com CRM sa vizuelnim pipeline-om i AI automatizacijama. Idealno za timove koji zele brzu implementaciju i intuitivno sucelje.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -162,7 +120,7 @@ BIXIE
 </div>
 </div>
 
-<div id="salesforce" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="salesforce" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Salesforce</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Salesforce sa Einstein AI. Enterprise CRM za srednje i velike firme. Migracija sa drugih sistema, custom razvoj i integracija.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -172,7 +130,7 @@ BIXIE
 </div>
 </div>
 
-<div id="pipedrive" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="pipedrive" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Pipedrive</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Pipedrive CRM fokusiran na prodaju. Intuitivan pipeline menadžment, automatizacija follow-upa i AI predviđanje prodaje.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -182,7 +140,7 @@ BIXIE
 </div>
 </div>
 
-<div id="twenty" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="twenty" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Twenty CRM</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Open-source CRM moderna alternativa. Samostalno hostovanje, potpuna kontrola nad podacima, API-first arhitektura.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -192,7 +150,7 @@ BIXIE
 </div>
 </div>
 
-<div id="hubspot" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="hubspot" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">HubSpot</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">HubSpot CRM sa besplatnim planom i AI alatima za marketing, prodaju i customer service. Breeze AI za automatizaciju.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -202,7 +160,7 @@ BIXIE
 </div>
 </div>
 
-<div id="sugarcrm" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="sugarcrm" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">SugarCRM</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">SugarCRM sa inteligentnim automatskim workflow-om i naprednom analitikom. Idealno za firme koje zele potpunu kontrolu nad prodajnim procesom.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -212,7 +170,7 @@ BIXIE
 </div>
 </div>
 
-<div id="microsoft" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #5e6ad2">
+<div id="microsoft" class="card" style="margin-bottom:16px;padding:32px;border-left:3px solid #00736a">
 <h2 style="font-size:24px;font-weight:510;color:#f7f8f8;letter-spacing:-0.288px;margin-bottom:8px">Microsoft Dynamics 365</h2>
 <p style="font-size:15px;line-height:1.6;color:#8a8f98;letter-spacing:-0.165px;margin-bottom:16px">Microsoft Dynamics 365 sa AI Copilot integracijom. Kompletno poslovno rjesenje koje povezuje CRM i ERP u jedan ekosistem.</p>
 <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -231,7 +189,7 @@ BIXIE
 
 <footer>
 <div class="footer-inner">
-<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f7f8f8;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#5e6ad2"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f3f4f6;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#8a8f98;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
 <div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
 <div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><br><a href="/privacy">Privacy Policy</a></div>
 <div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
