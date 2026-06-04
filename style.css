@@ -90,3 +90,38 @@ footer a:hover{color:#d1d5db}
   .page-header h1{font-size:28px}
   .page-wrap{padding:48px 24px}
 }
+
+/* ─── Blog Content Utilities ─── */
+.max-w-3xl{max-width:768px}
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:16px;padding-right:16px}
+.py-12{padding-top:48px;padding-bottom:48px}
+.mb-6{margin-bottom:24px}
+.mb-8{margin-bottom:32px}
+.inline-block{display:inline-block}
+.text-sm{font-size:14px}
+.text-gray-500{color:#6b7280}
+.hover\:text-white:hover{color:#f3f4f6}
+.text-blue-400{color:#00736a}
+.bg-blue-600\/20{background:rgba(0,115,106,0.12)}
+article{line-height:1.8}
+article h1{font-size:32px;font-weight:600;color:#f3f4f6;letter-spacing:-.5px;margin-bottom:24px;margin-top:8px}
+article h2{font-size:22px;font-weight:600;color:#f3f4f6;margin-top:40px;margin-bottom:12px;letter-spacing:-.3px}
+article h3{font-size:18px;font-weight:600;color:#f3f4f6;margin-top:32px;margin-bottom:8px}
+article p,article li{font-size:15px;color:#9ca3af;margin-bottom:16px}
+article ul,article ol{padding-left:20px;margin-bottom:20px}
+article li{margin-bottom:6px}
+article a{color:#00736a;text-decoration:none}
+article a:hover{color:#008a7f;text-decoration:underline}
+article strong{color:#d1d5db}
+article img{max-width:100%;border-radius:8px;margin:24px 0}
+article blockquote{border-left:3px solid #00736a;padding:12px 20px;margin:24px 0;background:rgba(0,115,106,0.04);border-radius:0 8px 8px 0}
+article blockquote p{color:#9ca3af;font-style:italic;margin:0}
+article pre{background:#141517;border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:16px;overflow-x:auto;margin:20px 0}
+article pre code{font-size:14px;color:#d1d5db}
+article code{font-size:14px;color:#00736a;background:rgba(0,115,106,0.08);padding:2px 6px;border-radius:4px}
+article table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+article th,article td{padding:10px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.06)}
+article th{color:#9ca3af;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+article td{color:#9ca3af}
+article hr{border:none;border-top:1px solid rgba(255,255,255,0.06);margin:32px 0}
