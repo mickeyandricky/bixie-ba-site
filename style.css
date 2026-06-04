@@ -174,12 +174,45 @@ footer a:hover{color:#00736a}
 .content td{color:#4b5563}
 .content hr{border:none;border-top:1px solid rgba(0,0,0,0.06);margin:40px 0}
 
+/* ─── Blog ─── */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px;justify-content:center}
+.filter-btn{font-size:13px;font-weight:500;color:#6b7280;background:#fff;border:1px solid rgba(0,0,0,0.06);padding:7px 18px;border-radius:100px;cursor:pointer;transition:all .2s}
+.filter-btn:hover{border-color:rgba(0,115,106,0.3);color:#00736a}
+.filter-btn.active{background:rgba(0,115,106,0.08);border-color:rgba(0,115,106,0.2);color:#00736a}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.blog-card{background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:12px;padding:24px;text-decoration:none;display:block;transition:all .25s}
+.blog-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.05);border-color:rgba(0,115,106,0.12);transform:translateY(-2px)}
+.blog-card h2{font-size:17px;font-weight:600;line-height:1.35;color:#1a1a2e;margin-bottom:8px;letter-spacing:-.2px}
+.blog-card p{font-size:14px;line-height:1.6;color:#6b7280;margin-bottom:12px}
+.blog-card .meta{font-size:12px;color:#9ca3af}
+.hidden{display:none!important}
+.newsletter{max-width:600px;margin:0 auto 64px;text-align:center;background:#f5f5f5;padding:40px 32px;border-radius:16px}
+.newsletter h3{font-size:20px;font-weight:600;color:#1a1a2e;margin-bottom:8px}
+.newsletter p{font-size:14px;color:#6b7280;margin-bottom:20px}
+.newsletter-form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.newsletter-form input{flex:1;padding:10px 16px;border:1px solid rgba(0,0,0,0.08);border-radius:8px;font-size:14px;outline:none}
+.newsletter-form input:focus{border-color:#00736a}
+.newsletter-form button{padding:10px 24px;background:#00736a;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:background .2s}
+.newsletter-form button:hover{background:#008a7f}
+
+/* ─── Contact ─── */
+.contact-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:start}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:14px;font-weight:500;color:#1a1a2e;margin-bottom:6px}
+.form-group input,.form-group textarea{width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.08);border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s;background:#fff;color:#1a1a2e}
+.form-group input:focus,.form-group textarea:focus{border-color:#00736a}
+.form-group textarea{min-height:140px;resize:vertical}
+.success-msg{display:none;padding:14px 18px;background:rgba(0,115,106,0.08);color:#00736a;border-radius:8px;font-size:14px;margin-bottom:20px;border:1px solid rgba(0,115,106,0.2)}
+.error-msg{display:none;padding:12px 16px;background:rgba(239,68,68,0.08);color:#dc2626;border-radius:8px;font-size:14px;margin-top:12px;border:1px solid rgba(239,68,68,0.2)}
+
 /* ─── Responsive ─── */
 @media(max-width:768px){
   .nav-links{display:none}
   .hamburger{display:flex}
-  .grid-3,.grid-2,.grid-4,.works-grid,.service-list,.testimonials-grid{grid-template-columns:1fr}
+  .grid-3,.grid-2,.grid-4,.works-grid,.service-list,.testimonials-grid,.blog-grid{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr;gap:32px}
+  .contact-grid{grid-template-columns:1fr}
+  .newsletter-form{flex-direction:column}
   section{padding:64px 24px}
   .section-title{font-size:26px;letter-spacing:-.4px}
   .section-sub{margin-bottom:32px}
